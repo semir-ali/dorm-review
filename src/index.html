@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dorm Reviews</title>
+</head>
+<body>
+<h1>Welcome to Brown Dorm Reviews</h1>
+<p>Select a dorm to see reviews:</p>
+
+<ul>
+    <li onclick="showReview('Andrews Hall')">Andrews Hall</li>
+    <li onclick="showReview('Perkins Hall')">Perkins Hall</li>
+    <li onclick="showReview('Keeney Quad')">Keeney Quad</li>
+</ul>
+
+<p id="review"></p>
+
+<script>
+    function showReview(dormName) {
+        document.getElementById("review").innerText = "Reviews for " + dormName + " coming soon!";
+    }
+</script>
+</body>
+</html>
